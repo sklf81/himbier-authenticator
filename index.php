@@ -1,7 +1,7 @@
 <!-- This is the page which ought to be locked by the authenticator -->
 <?php
 	include "/var/www/html/include/modules/pass.php";
-	if(auth_checkPass("lights") === false)
+	if(auth_checkPass("pass_request") === false)
 	{
 		header("Location: /authentification.php?request=pass_request&request_location=index.php");
 	}
