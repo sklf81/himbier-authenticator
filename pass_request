@@ -1,1 +1,5 @@
+hash("sha256", md5(str_replace(["\n", "\r"], "", <your_passphrase>))
 
+Example:
+Passphrase: pass
+Generated Hash (try https://hashgenerator.de): 1caa6a8885bc2f0442bdb06815e3176545a8b8d63822c851d815c5cb1c2ef014
