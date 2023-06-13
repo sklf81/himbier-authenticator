@@ -39,7 +39,7 @@ This hash needs to be generated like this: SHA256(MD5(<your_passphrase>))
 I can't suggest any kind of permission-setup but I can broadly explain how I've configured it.
 
 
-The file-permission for the `$passes_location` folder is ** 777 ** and the owner of the folder is the user-account for web-clients (in my case "www-data").
+The file-permission for the `$passes_location` folder is **777** and the owner of the folder is the user-account for web-clients (in my case "www-data").
 
 |	File	|	Description	|	Permission	|	Owner	|
 |---|---|---|---|
