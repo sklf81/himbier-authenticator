@@ -1,4 +1,6 @@
 <?php
+	$passes_location = "/data/pass/";
+
 	//From redirecting the link:
 	if(isset($_GET["save_session"])){
 		$pass_file = fopen("/data/pass/".$_GET["request"].".json", "w");
@@ -13,7 +15,7 @@
 			header("Location: /".$_POST["request_location"]);			
 		}		
 		else if(isset($_POST["pass"])){
-			$password_encrypted = str_replace(file_get_contents(["\n", "\r"], "", "/data/pass/".$_POST["request"]));
+			$password_encrypted = str_replace(file_get_contents(["\n", "\r"], "", $passes_location.$_POST["request"]));
 			//Strip Tags before processing input (isset() is okay to use without stripping)
 			$pass = strip_tags($_POST["pass"]);
 			
