@@ -18,4 +18,4 @@ For an example see "index.php":
 ```
 
 The `auth_checkPass("pass_request")` function checks if the current session is authenticated, if not, it sends an authentification request:
->GET request=<request> request_location=<location of page>
+>GET *"/authentification.php?request=pass_request&request_location=index.php"*
