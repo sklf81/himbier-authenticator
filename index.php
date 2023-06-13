@@ -3,7 +3,7 @@
 	include "/var/www/html/include/modules/pass.php";
 	if(auth_checkPass("lights") === false)
 	{
-		header("Location: /authentification.php?request=lights&request_location=lights");
+		header("Location: /authentification.php?request=pass_request&request_location=index.php");
 	}
 	else
 	{
