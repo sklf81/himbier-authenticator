@@ -3,7 +3,7 @@
 
 	//From redirecting the link:
 	if(isset($_GET["save_session"])){
-		$pass_file = fopen("/data/pass/".$_GET["request"].".json", "w");
+		$pass_file = fopen($passes_location.$_GET["request"].".json", "w");
 		$temp = array("session_id" => $_COOKIE["session_id"]);
 		fwrite($pass_file, json_encode($temp));
 		fclose($pass_file);
@@ -42,7 +42,7 @@
 	}
 
 	function auth_checkPass($request){
-		$pass_file_content = json_decode(file_get_contents("/data/pass/".$request.".json"));
+		$pass_file_content = json_decode(file_get_contents($passes_location.$request.".json"));
 		$session = $pass_file_content->session_id;
 		
 		if(isset($_COOKIE["session_id"])){
