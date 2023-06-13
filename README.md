@@ -34,3 +34,14 @@ This hash needs to be generated like this: SHA256(MD5(<your_passphrase>))
 >Passphrase: pass
 
 >Generated Hash (try https://hashgenerator.de): 1caa6a8885bc2f0442bdb06815e3176545a8b8d63822c851d815c5cb1c2ef014
+
+### Correctly set up your file's permissions
+I can't suggest any kind of permission-setup but I can broadly explain how I've configured it.
+
+
+The file-permission for the `$passes_location` folder is ** 777 ** and the owner of the folder is the user-account for web-clients (in my case "www-data").
+
+|	File	|	Description	|	Permission	|	Owner	|
+|---|---|---|---|
+|`pass_request` | Storage of pass-hash | 644 | root:root|
+|`pass_request.json`| Storage of session-id| 644|www-data:www-data|
