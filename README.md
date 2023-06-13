@@ -1,5 +1,6 @@
 # himbier-authenticator
 An authentification system for php-webservers
+
 ![authenticator_example](https://github.com/sklf81/himbier-authenticator/blob/main/authenticator.png)
 
 ## How to set it up
