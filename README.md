@@ -33,5 +33,5 @@ To let the authenticator know, which password is the correct one, you'll need to
 This hash needs to be generated like this: SHA256(MD5(<your_passphrase>))
 
 >Example:
->>Passphrase: pass
->>Generated Hash (try https://hashgenerator.de): 1caa6a8885bc2f0442bdb06815e3176545a8b8d63822c851d815c5cb1c2ef014
+>Passphrase: pass
+>Generated Hash (try https://hashgenerator.de): 1caa6a8885bc2f0442bdb06815e3176545a8b8d63822c851d815c5cb1c2ef014
