@@ -56,4 +56,4 @@ The file-permission for the `$passes_location` folder is **777** and the owner o
 - Safety Mechanics aren't certificated
 - System hasn't been tested for intrusions
 - Lack of safety because of possible exploitations (be concious during implementation to secure your root access and you'll be fine)
-- Is only capable of securing web-pages. Bu other mechanics could probably be implemented too
+- Is only capable of securing web-pages. But other mechanics could probably be implemented too
