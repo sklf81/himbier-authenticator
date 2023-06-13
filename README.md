@@ -46,3 +46,14 @@ The file-permission for the `$passes_location` folder is **777** and the owner o
 |`/your_passes`| The directory of stored passes | 644 | www-data:wwww-data|
 |`pass_request` | Storage of pass-hash | 644 | root:root|
 |`pass_request.json`| Storage of session-id| 644|www-data:www-data|
+
+## Usage and Benefits
+ - locking access to certain pages on your website
+ - simplicity in implementation
+ - GET-Requests serving the authenticator, thus serving for transperancy in it's function
+
+## Limitations
+- Safety Mechanics aren't certificated
+- System hasn't been tested for intrusions
+- Lack of safety because of possible exploitations (be concious during implementation to secure your root access and you'll be fine)
+- Is only capable of securing web-pages. Bu other mechanics could probably be implemented too
