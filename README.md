@@ -43,6 +43,6 @@ The file-permission for the `$passes_location` folder is ** 777 ** and the owner
 
 |	File	|	Description	|	Permission	|	Owner	|
 |---|---|---|---|
-|`/your_passes`| The directory of stored passes | 644 | root_root|
+|`/your_passes`| The directory of stored passes | 644 | www-data:wwww-data|
 |`pass_request` | Storage of pass-hash | 644 | root:root|
 |`pass_request.json`| Storage of session-id| 644|www-data:www-data|
